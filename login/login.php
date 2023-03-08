@@ -56,7 +56,7 @@ if ($row["usertype"] == "employee") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../assets/css/login_style.css">
-    <link rel="shortcut icon" type="image/jpg" href="/ALPHA TECH/Images/logo-small.ico" />
+    <link rel="shortcut icon" type="image/jpg" href="/ALPHA_TECH/images/logo-small.ico" />
 </head>
 
 <body>

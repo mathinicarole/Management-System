@@ -16,7 +16,7 @@ include("function.php");
     <link rel="stylesheet" href="../assets/css/index_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="/ALPHA TECH/Images/logo-small.ico" />
+    <link rel="shortcut icon" type="image/jpg" href="/ALPHA_TECH/images/logo-small.ico" />
 </head>
 
 <body>
@@ -30,7 +30,7 @@ include("function.php");
 
         <h3>WELCOME</h3>
         <div class="image">
-            <img src="/PAYMNGT/images/company.png" alt="logo" width="200" height="200">
+            <img src="/ALPHA_TECH/images/company.png" alt="logo" width="200" height="200">
         </div>
         <h1>Payroll <span>Management</span><br> System</h1>
     </div>
