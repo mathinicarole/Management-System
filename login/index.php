@@ -21,9 +21,6 @@ include("function.php");
 
 <body>
     <style>
-
-
-
     </style>
     <!----Content---->
     <div class="content">
@@ -32,10 +29,9 @@ include("function.php");
         <div class="image">
             <img src="/ALPHA_TECH/images/company.png" alt="logo" width="200" height="200">
         </div>
+
         <h1>Payroll <span>Management</span><br> System</h1>
     </div>
-
-
     <div class="login-box">
         <a href="login.php">START SESSION</a>
     </div>

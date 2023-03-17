@@ -1,78 +1,74 @@
 body {
-    background-image: url("/ALPHA_TECH/images/payroll.webp");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-attachment: fixed;
- }
- .content h1{
-    color: rgb(26, 25, 24);
-margin-top: 10px;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 30px;
- padding: 10px;
+  background-image: url("/ALPHA_TECH/images/payroll.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.image img{
-    padding-top: 20px;
-   
-    border-radius:4px;
-    transform:translate(-50%, -50%);
-    position:absolute;
-    top:25%;
-    left:50%;
-   }
-    
-.content h3{
-      padding-top: 10px;
-        color:rgb(188, 133, 188);
-        font-size: 35px;
-        margin-top: 20px;
-       margin-bottom: 200px;
-       text-align: center;
-   }
- .login-box{
- padding-top: 20px;
-    border-radius:4px;
-    transform:translate(-50%, -50%);
-    position:absolute;
-  
-    left:50%;
- }
-  .login-box a{
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color:rgb(188, 133, 188);
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-
-    letter-spacing: 4px;
-    background-color: rgb(28, 20, 28);
-   }
-
-   .login-box a:hover{
-    background:rgb(50, 45, 117);
-   color: aliceblue;
-   text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 0 5px violet,
-                0 0 25px violet,
-                0 0 50px violet,
-                0 0 100px violet;
+.content h1 {
+  color: rgb(26, 25, 24);
+  margin-top: 10px;
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
 }
-.login-box a span{
-    position: absolute;
-    display: block;
+.image img {
+  padding-top: 20px;
 
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.content h3 {
+  padding-top: 10px;
+  color: rgb(188, 133, 188);
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+.login-box {
+  padding-top: 20px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  left: 50%;
+}
+.login-box a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(188, 133, 188);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  letter-spacing: 4px;
+  background-color: rgb(28, 20, 28);
+}
+
+.login-box a:hover {
+  background: rgb(50, 45, 117);
+  color: aliceblue;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px violet, 0 0 25px violet, 0 0 50px violet, 0 0 100px violet;
+}
+.login-box a span {
+  position: absolute;
+  display: block;
 }
 .login-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, violet);
-    animation: btn-anim1 1s linear infinite;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, violet);
+  animation: btn-anim1 1s linear infinite;
 }
