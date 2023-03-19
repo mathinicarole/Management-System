@@ -1,50 +1,6 @@
 <?php
 include("connection.php");
-include("function.php");
-
-
-//will remove if necessary
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "login datab";
-
-//create connection
-$conn = mysqli_connect($host, $username, $password, $database);
-
-//check connection
-if (!$conn) {
-    die("<script>alert('connection failed.')</script>");
-}
-
-session_start();
-$_SESSION;
-error_reporting(0);
-//the connection
-include 'connection.php';
-
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-//something was posted
-{
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-}
-
-$sql = "select * from users where username='" . $username . "' AND password='" . $password . "'";
-
-$result = mysqli_query($conn, $sql);
-
-$row = mysqli_fetch_array($result);
-
-if ($row["usertype"] == "employee") {
-    $_SESSION["username"] = $username;
-    header("location:employee_page.php");
-} else if ($row["usertype"] == "admin") {
-    $_SESSION["username"] = $username;
-    header("location:admin_page.php");
-}
+//include("function.php");
 
 ?>
 <!DOCTYPE html>
@@ -61,22 +17,19 @@ if ($row["usertype"] == "employee") {
 
 <body>
     <div class="box">
-        <form action="" method="POST">
+        <form action="function.php" method="POST">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card">
-
-                            <form onsubmit="event.preventDefault()" class="box">
-                            </form>
-                        </div>
+                       
                         <h1>LOGIN</h1>
                         <p class="text-muted"> Start session!</p>
                         <form action="#" method="POST">
 
                             <input type="text" name="username" placeholder="User Type!!">
                             <input type="password" name="password" placeholder="Password!">
-                            <input type="submit" name="" value="Login" href="#">
+
+                            <button type="submit" class="btn" name="loginuser">Login</button>
                            
                     </div>
                     

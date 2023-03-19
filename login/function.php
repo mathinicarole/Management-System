@@ -1,22 +1,26 @@
-<!-- <?php
+<?php
+include("connection.php");
+//include("function.php");
 
-// function check_login($con){
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+//something was posted
+{
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+}
 
-//     if(isset($_SESSION['user_id']))
-//     {
-//       $id = $_SESSION['user_id'];
-//       $query="select * from users where user_id = '$id' limit 1" ;
-//       $result = mysqli_query($con,$query);
-//       if($result && mysqli_num_rows($result)>0)
-//       {
-//         $user_data=mysqli_fetch_assoc($result);
-//         return $user_data;
-//       }
-//     }
-//     //redirect to login
-//     header("Location: login.php");
-//     die;
-// }
+$sql = "select * from users where username='" . $username . "' AND password='" . $password . "'";
 
+$result = mysqli_query($conn, $sql);
 
-?> -->
+$row = mysqli_fetch_array($result);
+
+if ($row["usertype"] == "employee") {
+    $_SESSION["username"] = $username;
+    header("location:employee_page.php");
+} else if ($row["usertype"] == "admin") {
+    $_SESSION["username"] = $username;
+    header("location:admin_page.php");
+}
+
+?>

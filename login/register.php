@@ -1,14 +1,12 @@
 <?php
 session_start();
 include("connection.php");
-include("function.php");
-
-
+//include("function.php");
 
 ?>
 
 
-  
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,48 +22,31 @@ include("function.php");
 <body>
 
     <div class="box">
-        <form action="" method="POST">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Register</h1>
+                    <form action="register_user.php" method="POST">
+                    <select name="usertype" id="usertype">
+                            <option value="employee">employee</option>
+                            <option value="admin">admin</option>
+                        </select>
+                        <input type="text" placeholder="Username" name="username" required>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                        <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                       <br>
 
-                            <form onsubmit="event.preventDefault()" class="box">
-                            </form>
-                        </div>
+                        <button type="submit" name="register">REGISTER</button>
+                    </form>
+                </div>
 
-                        <h1>Register</h1>
-                        <form action="#" method="POST">
-
-                          
-                           <div class="row">
-                                <div class="form-group col">
-                                    <p class="text-muted">Type</p>
-                                    <select name="type" class="form-control" required>
-                                        <option value="">Select One type</option>
-                                        <option value="user">User</option>
-                                        <option value="admin">Admin</option>
+                <div class="container signin">
+                    <p class="text-muted">Already have an account? <a href="login.php">Signin</a>.</p>
+                </div>
 
 
-                                    </select>
-                                </div>
-                            </div>
-                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-
-                            
-                            <input type="submit" name="" value="Register" href="login.php">
-                    </div>
-
-                    <div class="container signin">
-                        <p  class="text-muted">Already have an account? <a href="login.php">Signin</a>.</p>
-                    </div>
-        </form>
-
-       
-    </div>
-    </div>
+            </div>
+        </div>
     </div>
     </div>
 
