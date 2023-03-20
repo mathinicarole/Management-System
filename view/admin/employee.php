@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- custom css file link -->
-    <link rel="stylesheet" href="../assets/css/admin_style.css">
+    <link rel="stylesheet" href="../../assets/css/admin_style.css">
     <link rel="shortcut icon" type="image/jpg" href="/ALPHA TECH/Images/logo-small.ico" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+     <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
 </head>
 
 <body>

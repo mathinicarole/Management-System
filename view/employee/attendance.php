@@ -7,7 +7,6 @@
       <title>Employee Page</title>
       <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
       <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-      
      <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
      <link rel="stylesheet" href="../assets/css/employee_style.css">
      <link rel="shortcut icon" type="image/jpg" href="/ALPHA TECH/Images/logo-small.ico" />
@@ -21,6 +20,7 @@
            
      </div>
                  <div class="sidebar-menu">
+                
                        <ul>
                        <li>
                            <a href="../employee/dashboard.php"><span class="las la-igloo"></span>
