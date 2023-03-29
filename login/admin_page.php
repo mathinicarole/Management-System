@@ -20,8 +20,6 @@ session_start();
 </head>
 
 <body>
-
-  <body>
     <div class="sidebar">
 
       <div class="sidebar-brand">
@@ -78,16 +76,24 @@ session_start();
 
             <a href="logout.php"><span class="las la-toggle-off">Logout</a>
           </div>
-
+        </ul>
       </div>
-
-
-    </div>
     </div>
 
-
-
-  </body>
+    <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div class="search">
+          <i class="las la-search"></i>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+        <div class="profile">
+        <i class="las la-bell"></i>
+        <img src="/ALPHA_TECH/images/profile.webp" alt="" height="50px" width="100px">
+        </div>
+      </div>
+    </section>
 </body>
 
 </html>

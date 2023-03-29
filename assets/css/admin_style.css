@@ -22,6 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
 }
 * {
   padding: 0;
@@ -31,13 +32,13 @@ body {
   text-decoration: none;
   font-family: "Roboto", "Mukta", sans-serif;
 }
-.sidebar {
+.sidebar{
   width: 345px;
-  position: fixed;
+  position: inherit;
   left: 0;
   top: 0;
-  height: 100%;
-  background: var(--main-color);
+  height: 600px;
+  background:var(--main-color) ;
   z-index: 100;
 }
 .sidebar-brand {
@@ -104,4 +105,52 @@ body {
 }
 .close a:hover {
   color: rgb(109, 165, 120);
+}
+#interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc(100%-300px);
+}
+#interface .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 300px;
+  border-bottom: 3px solid rgb(26, 23, 23);
+}
+#interface .navigation .search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+#interface .navigation .search i {
+  margin-right: 14px;
+}
+#interface .navigation .search input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  
+}
+#interface .navigation .profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#interface .navigation .profile i {
+  margin-right: 20px;
+  font-size: 19px;
+  font-weight: 400;
+}
+#interface .navigation .profile img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }

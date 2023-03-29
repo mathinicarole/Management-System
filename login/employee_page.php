@@ -33,41 +33,41 @@ session_start();
     <div class="sidebar-menu">
       <ul>
         <li>
-          <a href="../employee/dashboard.php"><span class="las la-igloo"></span>
+          <a href="../view/employee/dashboard.php"><span class="las la-igloo"></span>
             <span>Dashboard</span></a>
         </li>
         <li>
-          <a href="../employee/profile.php" class="active"><span class="las la-user"></span>
+          <a href="../view/employee/profile.php" class="active"><span class="las la-user"></span>
             <span>Profile</span></a>
         </li>
         <li>
-          <a href="../employee/details.php"><span class="las la-info-circle"></span>
+          <a href="../view/employee/details.php"><span class="las la-info-circle"></span>
             <span>Details</span></a>
         </li>
         <li>
-          <a href="../employee/attendance.php"><span class="las la-address-book"></span>
+          <a href="../view/employee/attendance.php"><span class="las la-address-book"></span>
             <span>Attendance</span></a>
         </li>
         <li>
-          <a href="../employee/message.php"><span class="las la-comment-dots"></span>
+          <a href="../view/employee/message.php"><span class="las la-comment-dots"></span>
             <span>Messages</span></a>
           <span class="message-count">22</span>
         </li>
         <li>
-          <a href="../employee/leave.php"><span class="las la-sign-out-alt"></span>
+          <a href="../view/employee/leave.php"><span class="las la-sign-out-alt"></span>
             <span>Leave</span></a>
         </li>
         <li>
-          <a href="../employee/salary_slips.php"><span class="las la-receipt"></span>
+          <a href="../view/employee/salary_slips.php"><span class="las la-receipt"></span>
             <span>Salary slips</span></a>
         </li>
         <li>
-          <a href="../employee/holiday.php"><span class="las la-gift"></span>
+          <a href="../view/employee/holiday.php"><span class="las la-gift"></span>
             <span>Holiday</span></a>
         </li>
 
         <li>
-          <a href="../employee/settings.php"><span class="las la-cog"></span>
+          <a href="../view/employee/settings.php"><span class="las la-cog"></span>
             <span>Settings</span></a>
         </li>
 
@@ -76,16 +76,36 @@ session_start();
 
           ?>
 
-          <a href="../login/logout.php"><span class="las la-toggle-off">Logout</a>
+          <a href="logout.php"><span class="las la-toggle-off">Logout</a>
         </div>
-
+      </ul>
+      
     </div>
-
-
+    
   </div>
-  </div>
-
-
+  <section id="interface">
+      <div class="navigation">
+        <div class="n1">
+          <div class="search">
+          <i class="las la-search"></i>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+        <div class="profile">
+        <i class="las la-bell"></i>
+        <img src="/ALPHA_TECH/images/profile.webp" alt="" height="50px" width="100px">
+        </div>
+      </div>
+      <h3 class="i-name">Dashboard</h3>
+      <div class="val-box">
+        <i class="fas fa-users"></i>
+        <div>
+          <h3>56789</h3>
+          <span>tcfgvyh</span>
+        </div>
+      </div>
+    </section>
+ 
 
 </body>
 
